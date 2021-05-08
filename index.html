@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/3616e96215.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<section class="header">
+  <nav>
+    <a href="#"><img src="https://th.bing.com/th/id/R22eb5f340a5a64bd5a2ba2514fced4e9?rik=WE1EoUsUg5t83A&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2017%2f12%2funiversity-of-georgia-logo.png&ehk=OVlTw5S466GPM0%2bkBCEvSPLTHxbtMq3g4ycjEvc1IOk%3d&risl=&pid=ImgRaw"></a>
+    <div class="nav-links" id="navLinks">
+     <i id="times" class="fas fa-times" onclick="hideMenu()"></i>
+       <ul>
+        <li><a href="#">Home</a></li>     
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+      <i id="bars" class="fas fa-bars"  onclick="showMenu()"></i>
+  </nav>
+
+  <div class="text-box">
+    <h1>World's Best University</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget vulputate erat, eget venenatis dolor.</p>
+    <a href="#">Visit us </a>
+    
+  </div>
+</section>
+
+<section class="range">
+  <h1>Facts about us:</h1>
+  <h2>6,321 Graduates</h2>
+  <p id="bachelors">BACHELORS (4,357)</p>
+  <p id="masters">MASTERS (1,349)</p>
+  <p id="doctorate">DOCTORATE (615)</p>
+ 
+  <div class="slider">
+     <div class="red"></div>
+     <div class="blue"></div>
+     <div class="green"></div>
+  </div>
+
+</section>
+
+<section class="campus">
+      <h1 id="cmp"1>Our Global Campus</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <h2>NEW YORK,LONDON,PARIS</h2>
+     <div class="images">
+      <img id="ny" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/NYU_Stern.jpg">
+   <img id="london" src="https://i.pinimg.com/736x/49/54/fc/4954fcb8201b06e26893754867bb0493.jpg">
+   <img id="paris" src="https://th.bing.com/th/id/R426aa44147bb0cd44a0401865c3386c5?rik=QO3mS16TnsB9eQ&pid=ImgRaw">
+        </div>
+</section>
+
+<section class="oc">
+<div class="text">
+<h1>We also have our Online Courses, you can register on the button below</h1>
+<a href="#">REGISTER</a>
+ </div>
+</section>
+
+<section class="about-us">
+<div class="txt">
+<h1>WHO ARE WE?</h1>
+<h2>We are an university in north Georgia located in <em>--- 231 georgia --</em></h2>
+<h3>WHAT WE OFFER?</h3>
+<p>We offer Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget vulputate erat.
+<button>VISIT US FOR MORE</button>
+</p>
+</div>
+</section>
+
+
+
+
+
+
+<section class="footer">
+<div class="cntr">
+<img src="https://th.bing.com/th/id/R22eb5f340a5a64bd5a2ba2514fced4e9?rik=WE1EoUsUg5t83A&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2017%2f12%2funiversity-of-georgia-logo.png&ehk=OVlTw5S466GPM0%2bkBCEvSPLTHxbtMq3g4ycjEvc1IOk%3d&risl=&pid=ImgRaw">
+</div>
+  <div class="ul">
+   <ul>
+   <li>Home</li>
+   <li>About</li>
+   <li>Blog</li>
+   <li>Contact</li>
+   </ul>
+   </div>
+<h2>@Copyright</h2>
+</section>
+
+
+
+<script>
+  var navLinks = document.getElementById("navLinks");
+  
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+   function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+
+
+</body>
+</html>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(173, 216, 230,0.4),rgba(173, 216, 230,0.4)), url(https://th.bing.com/th/id/R9af4a8e70fdd1f8c0921988e459543e2?rik=MDBvPaxqab831w&riu=http%3a%2f%2fwww.utcswindon.co.uk%2fwp-content%2fuploads%2f2016%2f06%2fth_f405eee6d696e119582c2a786a25cfb3_oxb2.jpg&ehk=SX3nPpZ2GPlmr%2fOP8qvL7vk%2brxPpknu%2bvEh7CGOxJSI%3d&risl=&pid=ImgRaw);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 0.2% 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 170px;
+  height: 95px;
+  padding: 0;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  display: inline-block;
+  position: relative;
+  padding: 8px 20px;
+}
+.nav-links ul li a{
+   color: black;
+   text-decoration: none;
+   font-size: 28px;
+   font-family: sans-serif;
+   font-weight: 540;
+}
+.nav-links ul li::after {
+  content: '';
+  height: 3.5px;
+  width: 0%;
+  background-color: black;
+  display: block;
+  margin: auto;
+  transition: 0.8s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  width: 80%;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-family: sans-serif;
+}
+.text-box h1{
+  font-size: 35px;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 21px;
+  font-weight: 600;
+}
+.text-box a{
+  text-decoration: none;
+  display: inline-block;
+  color: darkblue;
+  border: 3px solid darkblue;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 5px 28px;
+  font-weight: 700;
+  position: relative;
+}
+.text-box a:hover{
+  border: 3px solid darkblue;
+  background: darkblue;
+  transition: 0.9s;
+  color: white;
+}
+nav .fas{
+ display: none;
+}
+.range{
+  height: 59vh;
+  width: 100%;
+  background-color: #e6e6e6;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+}
+.range h1{
+  text-align: center;
+  font-family: sans-serif;
+  margin: 9px 0 0 0;
+  font-size: 30px;
+}
+.range h1::after{
+  margin: auto;
+  width: 65px;
+  height: 5px;
+  background-color: blue;
+  display: block;
+  content: '';
+}
+.range h2{
+  font-family: cursive;
+  font-size: 45px;
+  text-align: center;
+}
+
+.range p{
+  margin: auto;
+  padding: 0 0 15px 4px;
+}
+#bachelors::after{
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  margin: 0 0 -8px 6px;
+  border: 4px solid black;
+  border-radius: 50px;
+}
+#masters::after{
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+  margin: 0 0 -8px 25px;
+  border: 4px solid black;
+  border-radius: 50px;
+}
+#doctorate::after{
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  margin: 0 0 -8px 16px;
+  border: 4px solid black;
+  border-radius: 50px;
+}
+.slider{
+  width: 80%;
+  height: 20px;
+  background-color: transparent;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+.slider .red{
+  width: 69%;
+  height: 21px;
+  background-color: red;
+  border-radius: 10px 0 0 10px;
+  margin: -1px 0 0 -1px;
+}
+.slider .blue{
+  width: 21.2%;
+  height: 21.3px;
+  background-color: blue;
+  border-radius: 0;
+  margin: -1px 0 0 0;
+  position: relative;
+  top: -46.9%;
+  left: 79.5%;
+  transform: translate(-50%,-50%);
+}
+.slider .green{
+  width: 10.5%;
+  height: 21.7px;
+  background-color: green;
+  border-radius: 0 10px 10px 0;
+  margin: -1px 0 0 -1px;
+  position: relative;
+  top: -148.5%;
+  left: 95.1%;
+  border-left: 1px solid black;
+  transform: translate(-50%,-50%);
+}
+
+.campus{
+  height: 90vh;
+  width: 100%;
+  margin: auto;
+  background-color: #f3f3f3;
+  border-bottom: 4px solid blue;
+}
+.campus #cmp{
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin: auto;
+  padding-top: 40px;
+}
+.campus h2{
+  text-align: center;
+}
+.campus p{
+  text-align: center;
+  margin: auto;
+  font-family: sans-serif;
+  padding-top: 15px;
+}
+#ny{
+  width: 200px;
+  height: 280px;
+}
+#london{
+  width: 200px;
+  height: 280px;
+}
+#paris{
+  width: 200px;
+  height: 280px;
+}
+
+.images img{
+  margin: 18px;
+  height: 60vh;
+  display: flex;
+  float: left;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px gray;
+}
+.images{
+  margin: auto;
+  width: 75%;
+}
+.oc{
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 80vh;
+  background-image: url(https://th.bing.com/th/id/OIP.TNNhx9GnQUdLOYp_ZYg75gHaEL?pid=ImgDet&rs=1);
+  background-size: cover;
+  margin: auto;
+  border-bottom: 5px solid darkgreen;
+}
+.text{
+  width: 70%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.text h1{
+   color: white;
+   text-shadow: 3px 2px 4px black;
+   font-family: sans-serif;
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+.text a{
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+  border: 3px solid white;
+  padding: 5px 18px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.text a:hover{
+  background-color: white;
+  color: black;
+  transition: 0.6s;
+}
+.about-us{
+  background-color: #000066;
+  width: 100%;
+  height: 50vh;
+}
+.txt{
+  position: relative;
+  width: 80%;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: sans-serif;
+}
+.txt h1{
+  color: white;
+  
+}
+.txt h2{
+  color: white;
+  margin-top: 5px;
+}
+.txt h3{
+ color: white;
+ margin-top: 8px;
+}
+.txt p{
+ color: white;
+ margin-top: 8px;
+}
+.txt button{
+  background-color: transparent;
+  font-size: 16px;
+  color: white;
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  border: 3px solid white;
+  cursor: pointer;
+  display: block;
+  margin: 14px auto;
+}
+.txt button:hover{
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  font-weight: 700;
+}
+.footer{
+ background-color: #333333;
+ height: 60vh;
+ width: 100%;
+ border-top: 3px solid gray;
+}
+.cntr {
+  width: 190px;
+  height: 130px;
+  margin: auto;
+}
+.cntr img{
+  width: 190px;
+  height: 130px;
+  margin: auto;
+}
+.ul{
+  width: 50%;
+  margin: auto;
+}
+.ul  li{
+  text-align: center;
+  list-style-type: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+}
+.footer h2{
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (max-width: 1575px){
+.images{
+  margin: auto;
+  width: 50%;
+}
+}
+@media (max-width: 1475px){
+.images{
+  margin: auto;
+  width: 55%;
+}
+}
+@media (max-width: 1350px){
+.images{
+  margin: auto;
+  width: 65%;
+}
+}
+@media (max-width: 1200px){
+.images img{
+  margin: 12px;
+  height: 60vh;
+  float: left;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px gray;
+}
+.images{
+  margin: auto;
+  width: 72%;
+}
+}
+@media (max-width: 965px){
+.images img{
+  margin: 4px;
+  height: 60vh;
+  float: left;
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px gray;
+}
+.images{
+  margin: auto;
+  width: 80%;
+}
+}
+@media (max-width: 800px){
+.images img{
+  margin: 4px;
+  height: 55vh;
+  float: left;
+  width: 170px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px gray;
+}
+.images{
+  margin: auto;
+  width: 95%;
+}
+}
+@media (max-width: 700px){
+.text-box h1{
+  font-size: 30px;
+}
+.nav-links ul li{
+  display: block;
+}
+.nav-links{
+  position: fixed;
+  background-color: darkblue;
+  height: 100vh;
+  width: 200px;
+  top: 0;
+  right: -200px;
+  text-align: center;
+  z-index: 2;
+}
+nav #times{
+  display: block;
+  color: white;
+  margin: 14px 109px 5px -13px;
+  font-size: 33px;
+  cursor: pointer;
+}
+nav #bars{
+  display: block;
+  color: white;
+  margin: 14px 10px 5px -13px;
+  font-size: 33px;
+  cursor: pointer;
+}
+.nav-links ul{
+  padding: 21px;
+}
+.nav-links ul li a{
+   color: white;
+   text-decoration: none;
+   font-size: 28px;
+   font-family: sans-serif;
+   font-weight: 540;
+}
+.nav-links ul li::after {
+  content: '';
+  height: 3.5px;
+  width: 0%;
+  background-color: white;
+  display: block;
+  margin: auto;
+  transition: 0.8s;
+}
+.range{
+  height: 65vh;
+}
+.campus{
+  height: 130vh;
+}
+.images img{
+  margin: 4px;
+  height: 50vh;
+  float: left;
+  width: 160px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px gray;
+}
+.images{
+  margin: auto;
+  width: 99%;
+}
+}
+@media (max-width: 522px){
+.about-us{
+ height: 70vh;
+}
+.txt{
+  top: 50%;
+}
+}
+@media (max-width: 441px){
+.campus{
+  height: 190vh;
+}
+.images img{
+  margin: 4px;
+  height: 50vh;
+  float: left;
+  width: 160px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px gray;
+}
+.images{
+  margin: auto;
+  width: 99%;
+}
+.about-us{
+ height: 80vh;
+}
+}
+
+
+</style>
+
+
